@@ -17,15 +17,8 @@ void system_entry(void *parameter)
 //	rt_device_t dev;
 //	dev=rt_device_find("adc1");
 	button_init();
-	camera();
-	encoder_init();
-	rt_uint8_t i;
-	while(1)
-	{
-			i++;
-			lcd_showint16(80,6,i);
-			//rt_thread_mdelay(20);
-	}
+	//camera();
+	//encoder_init();
 }
 
 
