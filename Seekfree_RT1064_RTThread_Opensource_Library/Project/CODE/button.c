@@ -31,7 +31,7 @@ void button_init(void)
 {
 		rt_timer_t button_timer,tim2;
 		
-		gpio_init(KEY_up, GPI, GPIO_HIGH, GPIO_PIN_CONFIG);			// 初始化为GPIO浮空输入 默认上拉高电平
+		gpio_init(KEY_up, GPI, GPIO_LOW, GPIO_PIN_CONFIG);			// 初始化为GPIO浮空输入
 		gpio_interrupt_init(KEY_up   ,FALLING,GPIO_INT_CONFIG);//下降沿触发中断
 	
 		button_timer = rt_timer_create("button", button_entry, 

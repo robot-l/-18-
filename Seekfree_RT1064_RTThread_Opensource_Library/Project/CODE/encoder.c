@@ -67,7 +67,7 @@ void encoder_init()
 		ThEncoder = rt_timer_create("encoder",
 																  encoder_entry,
 																	RT_NULL,
-																	5,RT_TIMER_FLAG_PERIODIC);
+																	50,RT_TIMER_FLAG_PERIODIC);
 		if (RT_NULL != ThEncoder)
 		{
 				rt_timer_start(ThEncoder);

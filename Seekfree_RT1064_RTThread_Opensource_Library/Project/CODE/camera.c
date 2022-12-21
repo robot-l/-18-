@@ -10,6 +10,8 @@ void camera_entry(void *parameter)
 																 MT9V03X_CSI_H, 
 																 80, 60);
 		}
+		
+		
 }
 
 void camera()
